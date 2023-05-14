@@ -9,6 +9,8 @@ intents = discord.Intents.default()
 # Enable the privileged intents for members and presences (requires enabling in the Discord developer portal)
 intents.members = True
 intents.presences = True
+intents.message_content = True 
+
 
 load_dotenv() # Load environment variables from .env file
 TOKEN = os.getenv('DISCORD_TOKEN') # Get bot token from environment variable
